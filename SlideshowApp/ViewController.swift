@@ -25,14 +25,23 @@ class ViewController: UIViewController {
     var isPlay = false
     @IBOutlet weak var playButton: UIButton!
     
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var prevButton: UIButton!
+    
     @IBAction func playAction(_ sender: UIButton) {
-        isPlay = !isPlay
-        if isPlay == true {
-            playButton.setTitle("停止",for: .normal)
+        //isPlay = !isPlay
+        if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            
+            playButton.setTitle("停止",for: .normal)
+            nextButton.isEnabled = false
+            prevButton.isEnabled = false
         } else {
-            playButton.setTitle("再生",for: .normal)
             timer?.invalidate()
+            timer = nil
+            playButton.setTitle("再生",for: .normal)
+            nextButton.isEnabled = true
+            prevButton.isEnabled = true
         }
     }
     
@@ -62,18 +71,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func prev(_ sender: UIButton) {
-        if timer == nil {
-            imageNumber -= 1
-            displayImage()
-        }
-    }
-    @IBAction func next(_ sender: UIButton) {
-        if timer == nil {
-            imageNumber += 1
-            displayImage()
-        }
+    @IBAction func nextAction(_ sender: UIButton) {
+        imageNumber -= 1
+        displayImage()
     }
     
+    @IBAction func prevAction(_ sender: UIButton) {
+        imageNumber += 1
+        displayImage()
+    }
 }
 

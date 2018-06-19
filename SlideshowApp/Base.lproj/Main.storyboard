@@ -38,7 +38,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
-                                            <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wGA-HD-zJB"/>
+                                            <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryp-k0-r5g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMM-Za-keF">
@@ -46,7 +46,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="戻る"/>
                                         <connections>
-                                            <action selector="prev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5E0-WE-GOV"/>
+                                            <action selector="prevAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfY-by-qWc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -61,7 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="cJt-8Y-eGR" id="9ym-Ub-G68"/>
                         <outlet property="playButton" destination="Xe0-AR-pIa" id="pmq-up-zRG"/>
+                        <outlet property="prevButton" destination="HMM-Za-keF" id="WUs-4V-zJy"/>
                         <outlet property="slideShow" destination="pfX-us-Jk4" id="3XR-hm-c0Q"/>
                     </connections>
                 </viewController>
