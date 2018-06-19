@@ -12,6 +12,9 @@
 		9520100220D7AEFD000A94E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9520100020D7AEFD000A94E6 /* Main.storyboard */; };
 		9520100420D7AEFD000A94E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9520100320D7AEFD000A94E6 /* Assets.xcassets */; };
 		9520100720D7AEFD000A94E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9520100520D7AEFD000A94E6 /* LaunchScreen.storyboard */; };
+		9520100F20D7AFFE000A94E6 /* IMG_1197-EFFECTS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9520100E20D7AFFD000A94E6 /* IMG_1197-EFFECTS.jpg */; };
+		9520101120D7B25E000A94E6 /* IMG_0291-EFFECTS (1).jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9520101020D7B25E000A94E6 /* IMG_0291-EFFECTS (1).jpg */; };
+		9520101320D7B26B000A94E6 /* IMG_0265.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9520101220D7B26B000A94E6 /* IMG_0265.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9520100320D7AEFD000A94E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9520100620D7AEFD000A94E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9520100820D7AEFD000A94E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9520100E20D7AFFD000A94E6 /* IMG_1197-EFFECTS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_1197-EFFECTS.jpg"; sourceTree = "<group>"; };
+		9520101020D7B25E000A94E6 /* IMG_0291-EFFECTS (1).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMG_0291-EFFECTS (1).jpg"; sourceTree = "<group>"; };
+		9520101220D7B26B000A94E6 /* IMG_0265.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0265.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				95200FFC20D7AEFD000A94E6 /* AppDelegate.swift */,
 				95200FFE20D7AEFD000A94E6 /* ViewController.swift */,
+				9520100E20D7AFFD000A94E6 /* IMG_1197-EFFECTS.jpg */,
+				9520101020D7B25E000A94E6 /* IMG_0291-EFFECTS (1).jpg */,
+				9520101220D7B26B000A94E6 /* IMG_0265.JPG */,
 				9520100020D7AEFD000A94E6 /* Main.storyboard */,
 				9520100320D7AEFD000A94E6 /* Assets.xcassets */,
 				9520100520D7AEFD000A94E6 /* LaunchScreen.storyboard */,
@@ -123,8 +132,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9520101320D7B26B000A94E6 /* IMG_0265.JPG in Resources */,
 				9520100720D7AEFD000A94E6 /* LaunchScreen.storyboard in Resources */,
+				9520101120D7B25E000A94E6 /* IMG_0291-EFFECTS (1).jpg in Resources */,
 				9520100420D7AEFD000A94E6 /* Assets.xcassets in Resources */,
+				9520100F20D7AFFE000A94E6 /* IMG_1197-EFFECTS.jpg in Resources */,
 				9520100220D7AEFD000A94E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
