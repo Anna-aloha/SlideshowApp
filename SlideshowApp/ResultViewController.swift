@@ -2,17 +2,16 @@
 //  ResultViewController.swift
 //  SlideshowApp
 //
-//  Created by Anna Takegawa on 6/19/18.
+//  Created by Anna Takegawa on 6/21/18.
 //  Copyright © 2018 anna.takegawa. All rights reserved.
 //
 
 import UIKit
 
 class ResultViewController: UIViewController {
-
-    @IBOutlet weak var bigImage: UIImageView!
     
-    var selectedImage: UIImage
+    var selectedImage: UIImage!
+    @IBOutlet weak var bigImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +20,13 @@ class ResultViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+
     /*
     // MARK: - Navigation
 

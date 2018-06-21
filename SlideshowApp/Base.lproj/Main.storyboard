@@ -110,7 +110,7 @@
                         <viewLayoutGuide key="safeArea" id="kAV-v6-fGr"/>
                     </view>
                     <connections>
-                        <outlet property="bigImage" destination="GVe-5O-1X0" id="XrI-ed-KpN"/>
+                        <outlet property="bigImage" destination="GVe-5O-1X0" id="BMa-Ba-o8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s08-Tf-UmY" userLabel="First Responder" sceneMemberID="firstResponder"/>

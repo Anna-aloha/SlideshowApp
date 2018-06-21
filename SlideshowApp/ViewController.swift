@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         displayImage()
     }
     
+    let imageArray = [#imageLiteral(resourceName: "IMG_1197-EFFECTS.jpg"), #imageLiteral(resourceName: "IMG_0291-EFFECTS (1).jpg"), #imageLiteral(resourceName: "IMG_0265.JPG")]
+    
     func displayImage() {
-        
-        let imageArray = [#imageLiteral(resourceName: "IMG_1197-EFFECTS.jpg"), #imageLiteral(resourceName: "IMG_0291-EFFECTS (1).jpg"), #imageLiteral(resourceName: "IMG_0265.JPG")]
         
         if imageNumber > 2 {
             imageNumber = 0
@@ -88,7 +88,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         
-        resultViewController.selectedImage = imageNumber
+        resultViewController.selectedImage = imageArray[imageNumber]
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
