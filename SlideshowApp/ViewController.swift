@@ -80,5 +80,19 @@ class ViewController: UIViewController {
         imageNumber += 1
         displayImage()
     }
+    
+    @IBAction func tapImage(_ sender: Any) {
+        performSegue(withIdentifier: "showImage", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        
+        resultViewController.selectedImage = imageNumber
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+    
 }
 
