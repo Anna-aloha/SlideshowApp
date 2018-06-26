@@ -89,6 +89,11 @@ class ViewController: UIViewController {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         
         resultViewController.selectedImage = imageArray[imageNumber]
+        timer?.invalidate()
+        timer = nil
+        playButton.setTitle("再生",for: .normal)
+        nextButton.isEnabled = true
+        prevButton.isEnabled = true
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
